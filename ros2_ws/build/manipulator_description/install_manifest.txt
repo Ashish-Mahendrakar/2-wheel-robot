@@ -1,0 +1,17 @@
+/home/ashish/ros2_ws/install/manipulator_description/share/manipulator_description/urdf/manipulator.xacro
+/home/ashish/ros2_ws/install/manipulator_description/share/manipulator_description/urdf/manipulator1.xacro
+/home/ashish/ros2_ws/install/manipulator_description/share/ament_index/resource_index/package_run_dependencies/manipulator_description
+/home/ashish/ros2_ws/install/manipulator_description/share/ament_index/resource_index/parent_prefix_path/manipulator_description
+/home/ashish/ros2_ws/install/manipulator_description/share/manipulator_description/environment/ament_prefix_path.sh
+/home/ashish/ros2_ws/install/manipulator_description/share/manipulator_description/environment/ament_prefix_path.dsv
+/home/ashish/ros2_ws/install/manipulator_description/share/manipulator_description/environment/path.sh
+/home/ashish/ros2_ws/install/manipulator_description/share/manipulator_description/environment/path.dsv
+/home/ashish/ros2_ws/install/manipulator_description/share/manipulator_description/local_setup.bash
+/home/ashish/ros2_ws/install/manipulator_description/share/manipulator_description/local_setup.sh
+/home/ashish/ros2_ws/install/manipulator_description/share/manipulator_description/local_setup.zsh
+/home/ashish/ros2_ws/install/manipulator_description/share/manipulator_description/local_setup.dsv
+/home/ashish/ros2_ws/install/manipulator_description/share/manipulator_description/package.dsv
+/home/ashish/ros2_ws/install/manipulator_description/share/ament_index/resource_index/packages/manipulator_description
+/home/ashish/ros2_ws/install/manipulator_description/share/manipulator_description/cmake/manipulator_descriptionConfig.cmake
+/home/ashish/ros2_ws/install/manipulator_description/share/manipulator_description/cmake/manipulator_descriptionConfig-version.cmake
+/home/ashish/ros2_ws/install/manipulator_description/share/manipulator_description/package.xml

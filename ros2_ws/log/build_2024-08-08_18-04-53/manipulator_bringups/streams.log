@@ -1,0 +1,22 @@
+[0.042s] Invoking command in '/home/ashish/ros2_ws/build/manipulator_bringups': CMAKE_PREFIX_PATH=/home/ashish/ros2_ws/install/manipulator_description:/home/ashish/ros2_ws/install/my_robot_description:/home/ashish/ros2_ws/install/manipulator_bringups:/opt/ros/humble /usr/bin/cmake --build /home/ashish/ros2_ws/build/manipulator_bringups -- -j2 -l2
+[0.094s] Invoked command in '/home/ashish/ros2_ws/build/manipulator_bringups' returned '0': CMAKE_PREFIX_PATH=/home/ashish/ros2_ws/install/manipulator_description:/home/ashish/ros2_ws/install/my_robot_description:/home/ashish/ros2_ws/install/manipulator_bringups:/opt/ros/humble /usr/bin/cmake --build /home/ashish/ros2_ws/build/manipulator_bringups -- -j2 -l2
+[0.128s] Invoking command in '/home/ashish/ros2_ws/build/manipulator_bringups': CMAKE_PREFIX_PATH=/home/ashish/ros2_ws/install/manipulator_description:/home/ashish/ros2_ws/install/my_robot_description:/home/ashish/ros2_ws/install/manipulator_bringups:/opt/ros/humble /usr/bin/cmake --install /home/ashish/ros2_ws/build/manipulator_bringups
+[0.147s] -- Install configuration: ""
+[0.147s] -- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/launch
+[0.148s] -- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/launch/display.launch.xml
+[0.148s] -- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/ament_index/resource_index/package_run_dependencies/manipulator_bringups
+[0.148s] -- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/ament_index/resource_index/parent_prefix_path/manipulator_bringups
+[0.149s] -- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/environment/ament_prefix_path.sh
+[0.149s] -- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/environment/ament_prefix_path.dsv
+[0.149s] -- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/environment/path.sh
+[0.150s] -- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/environment/path.dsv
+[0.150s] -- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/local_setup.bash
+[0.150s] -- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/local_setup.sh
+[0.150s] -- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/local_setup.zsh
+[0.151s] -- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/local_setup.dsv
+[0.151s] -- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/package.dsv
+[0.151s] -- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/ament_index/resource_index/packages/manipulator_bringups
+[0.152s] -- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/cmake/manipulator_bringupsConfig.cmake
+[0.152s] -- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/cmake/manipulator_bringupsConfig-version.cmake
+[0.152s] -- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/package.xml
+[0.156s] Invoked command in '/home/ashish/ros2_ws/build/manipulator_bringups' returned '0': CMAKE_PREFIX_PATH=/home/ashish/ros2_ws/install/manipulator_description:/home/ashish/ros2_ws/install/my_robot_description:/home/ashish/ros2_ws/install/manipulator_bringups:/opt/ros/humble /usr/bin/cmake --install /home/ashish/ros2_ws/build/manipulator_bringups

@@ -1,0 +1,8 @@
+source;share/manipulator_bringups/hook/cmake_prefix_path.ps1
+source;share/manipulator_bringups/hook/cmake_prefix_path.dsv
+source;share/manipulator_bringups/hook/cmake_prefix_path.sh
+source;share/manipulator_bringups/local_setup.bash
+source;share/manipulator_bringups/local_setup.dsv
+source;share/manipulator_bringups/local_setup.ps1
+source;share/manipulator_bringups/local_setup.sh
+source;share/manipulator_bringups/local_setup.zsh

@@ -1,0 +1,21 @@
+-- Install configuration: ""
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/launch
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/launch/display.launch.xml
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/launch/gazebo.launch.xml
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/config
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/config/controller.yaml
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/ament_index/resource_index/package_run_dependencies/manipulator_bringups
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/ament_index/resource_index/parent_prefix_path/manipulator_bringups
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/environment/path.sh
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/environment/path.dsv
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/local_setup.bash
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/local_setup.sh
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/local_setup.zsh
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/local_setup.dsv
+-- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/package.dsv
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/ament_index/resource_index/packages/manipulator_bringups
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/cmake/manipulator_bringupsConfig.cmake
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/cmake/manipulator_bringupsConfig-version.cmake
+-- Up-to-date: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/package.xml

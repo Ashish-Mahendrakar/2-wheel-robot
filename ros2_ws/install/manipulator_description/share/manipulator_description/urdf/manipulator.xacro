@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<robot name="manipulator" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+    <gazebo>
+        <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control" >
+            <robot_param>robot_description</robot_param>
+            <robot_param_node>robot_state_publisher</robot_param_node>
+            <parameters>$(find manipulator_bringups)/config/controller.yaml</parameters>
+        </plugin>
+
+    </gazebo>
+
+    <!-- <xacro:include filename="${find manipulator_description}/urdf/manipulator1.xacro" /> -->
+
+    <ros2_control name="RobotSystem" type="system">
+        <hardware>  
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+        
+        <joint name="base_1_joint">
+            <command_interface name="position">
+                <param name="${-pi/2}"/>
+                <param name="${pi/2}" />
+            </command_interface>
+
+            <state_interface name="position"></state_interface>
+        </joint>
+
+
+        <joint name="1_2_joint">
+            <command_interface name="position">
+                <param name="${-pi/2}"/>
+                <param name="${pi/2}" />
+            </command_interface>
+
+            <state_interface name="position"></state_interface>
+        </joint>
+
+
+        <joint name="2_3_joint">
+            <command_interface name="position">
+                <param name="${-pi/2}"/>
+                <param name="${pi/2}" />
+            </command_interface>
+
+            <state_interface name="position"></state_interface>
+        </joint>
+
+
+    
+    </ros2_control>
+
+
+
+
+    <xacro:property name="box_length" value="1.0" />
+    <xacro:property name="cylinder_radius" value="0.25" />
+    <xacro:property name="cylinder_height" value="0.5" />
+
+    <xacro:macro name="cylinder_inertia" params="m r h xyz rpy">
+        <inertial>
+            <origin xyz="${xyz}" rpy="${rpy}" />
+            <mass value="${m}" />
+            <inertia ixx="${m*((3*r*r) +(h*h))/12}" ixy="0" ixz="0"
+                     iyy="${m*((3*r*r) +(h*h))/12}" iyz="0"
+                     izz="${m*r*r/2}" />
+        </inertial>
+    </xacro:macro>
+
+    <xacro:macro name="default_transmission" params="name" >
+        <transmission name="t_${name}">
+            <plugin>transmission_interface/SimpleTransmission</plugin>
+            <actuator name="m_${name}" role="actuator1"/>
+            <joint name="${name}" role="joint1">
+                <mechanical_reduction>1.0</mechanical_reduction>
+            </joint>
+        </transmission>
+    </xacro:macro>
+
+
+    <link name="foot" />
+
+    <joint name="dummy" type="fixed">
+        <parent link="foot" />
+        <child link="base_link" />
+    </joint>
+
+
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="${box_length} ${box_length} ${box_length}" />
+            </geometry>
+            <origin xyz="0 0 ${box_length/2}" rpy="0 0 0" />
+        </visual>
+        <inertial>
+            <origin xyz="0 0 ${box_length/2}" rpy="0 0 0" />
+            <mass value="5" />
+            <inertia ixx="${box_length*box_length*5/6}" ixy="0" ixz="0"
+                     iyy="${box_length*box_length*5/6}" iyz="0"
+                     izz="${box_length*box_length*5/6}" />
+        </inertial>
+        <collision>
+            <geometry>
+                <box size="${box_length} ${box_length} ${box_length}" />
+            </geometry>
+            <origin xyz="0 0 ${box_length/2}" rpy="0 0 0" />
+        </collision>
+
+        
+    </link>
+
+    <joint name="base_1_joint" type="revolute">
+        <parent link="base_link"/>
+        <child link="1_link"/>
+        <origin xyz="0 0 ${box_length}" rpy="0 0 0"/>
+        <axis xyz="0 0 1" />
+        <limit lower="${-pi/2}" upper="${pi/2}" effort="100" velocity="100" />
+
+    </joint>
+
+    <link name="1_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${cylinder_radius}" length="${cylinder_height}" />
+            </geometry>
+            <origin xyz="0 0 ${cylinder_height/2}" rpy="0 0 0" />
+        </visual>
+        <xacro:cylinder_inertia m="2" r="${cylinder_radius}" h="${cylinder_height}" xyz="0 0 ${cylinder_height/2}" rpy="0 0 0" />
+        <collision>
+            <geometry>
+                <cylinder radius="${cylinder_radius}" length="${cylinder_height}" />
+            </geometry>
+            <origin xyz="0 0 ${cylinder_height/2}" rpy="0 0 0" />
+        </collision>
+
+    </link>
+
+    <joint name="1_2_joint" type="revolute">
+        <parent link="1_link"/>
+        <child link="2_link"/>
+        <origin xyz="0 0 ${cylinder_height}" rpy="0 0 0"/>
+        <axis xyz="1 0 0" />
+        <limit lower="${-pi/2}" upper="${pi/2}" effort="100" velocity="100" />
+
+        
+    </joint>
+
+    <link name="2_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${cylinder_radius/2}" length="${cylinder_height}" />
+            </geometry>
+            <origin xyz="0 0 ${cylinder_height/2} " rpy="0 0 0" />
+        </visual>
+        <xacro:cylinder_inertia m="0.5" r="${cylinder_radius/2}" h="${cylinder_height}" xyz="0 0 ${cylinder_height/2}" rpy="0 0 0" />
+        <collision>
+            <geometry>
+                <cylinder radius="${cylinder_radius/2}" length="${cylinder_height}" />
+            </geometry>
+            <origin xyz="0 0 ${cylinder_height/2} " rpy="0 0 0" />
+        </collision>
+
+        
+    </link>
+
+    <joint name="2_3_joint" type="revolute">
+        <parent link="2_link"/>
+        <child link="3_link"/>
+        <origin xyz="0 0 ${cylinder_height}" rpy="0 0 0"/>
+        <axis xyz="1 0 0" />
+        <limit lower="${-pi/2}" upper="${pi/2}" effort="100" velocity="100" />
+
+        
+    </joint>
+
+    <link name="3_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${cylinder_radius/2}" length="${cylinder_height}" />
+            </geometry>
+            <origin xyz="0 0 ${cylinder_height/2} " rpy="0 0 0" />
+        </visual>
+        <xacro:cylinder_inertia m="0.5" r="${cylinder_radius/2}" h="${cylinder_height}" xyz="0 0 ${cylinder_height/2}" rpy="0 0 0" />
+        <collision>
+            <geometry>
+                <cylinder radius="${cylinder_radius/2}" length="${cylinder_height}" />
+            </geometry>
+            <origin xyz="0 0 ${cylinder_height/2} " rpy="0 0 0" />
+        </collision>
+
+    </link>
+
+    <xacro:default_transmission name="base_1_joint" />
+    <xacro:default_transmission name="1_2_joint" />
+    <xacro:default_transmission name="2_3_joint" />
+</robot>

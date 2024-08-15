@@ -1,0 +1,41 @@
+[0.010s] Invoking command in '/home/ashish/ros2_ws/build/manipulator_bringups': AMENT_PREFIX_PATH=/home/ashish/ros2_ws/install/manipulator_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ashish/ros2_ws/install/manipulator_description:/home/ashish/ros2_ws/install/my_robot_description:/opt/ros/humble /usr/bin/cmake /home/ashish/ros2_ws/src/manipulator_bringups -DCMAKE_INSTALL_PREFIX=/home/ashish/ros2_ws/install/manipulator_bringups
+[0.090s] -- The C compiler identification is GNU 11.4.0
+[0.214s] -- The CXX compiler identification is GNU 11.4.0
+[0.233s] -- Detecting C compiler ABI info
+[0.342s] -- Detecting C compiler ABI info - done
+[0.352s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.352s] -- Detecting C compile features
+[0.352s] -- Detecting C compile features - done
+[0.355s] -- Detecting CXX compiler ABI info
+[0.500s] -- Detecting CXX compiler ABI info - done
+[0.508s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.508s] -- Detecting CXX compile features
+[0.509s] -- Detecting CXX compile features - done
+[0.512s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.723s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.980s] -- Configuring done
+[0.981s] -- Generating done
+[0.984s] -- Build files have been written to: /home/ashish/ros2_ws/build/manipulator_bringups
+[0.988s] Invoked command in '/home/ashish/ros2_ws/build/manipulator_bringups' returned '0': AMENT_PREFIX_PATH=/home/ashish/ros2_ws/install/manipulator_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ashish/ros2_ws/install/manipulator_description:/home/ashish/ros2_ws/install/my_robot_description:/opt/ros/humble /usr/bin/cmake /home/ashish/ros2_ws/src/manipulator_bringups -DCMAKE_INSTALL_PREFIX=/home/ashish/ros2_ws/install/manipulator_bringups
+[0.990s] Invoking command in '/home/ashish/ros2_ws/build/manipulator_bringups': AMENT_PREFIX_PATH=/home/ashish/ros2_ws/install/manipulator_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ashish/ros2_ws/install/manipulator_description:/home/ashish/ros2_ws/install/my_robot_description:/opt/ros/humble /usr/bin/cmake --build /home/ashish/ros2_ws/build/manipulator_bringups -- -j2 -l2
+[1.093s] Invoked command in '/home/ashish/ros2_ws/build/manipulator_bringups' returned '0': AMENT_PREFIX_PATH=/home/ashish/ros2_ws/install/manipulator_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ashish/ros2_ws/install/manipulator_description:/home/ashish/ros2_ws/install/my_robot_description:/opt/ros/humble /usr/bin/cmake --build /home/ashish/ros2_ws/build/manipulator_bringups -- -j2 -l2
+[1.158s] Invoking command in '/home/ashish/ros2_ws/build/manipulator_bringups': AMENT_PREFIX_PATH=/home/ashish/ros2_ws/install/manipulator_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ashish/ros2_ws/install/manipulator_description:/home/ashish/ros2_ws/install/my_robot_description:/opt/ros/humble /usr/bin/cmake --install /home/ashish/ros2_ws/build/manipulator_bringups
+[1.167s] -- Install configuration: ""
+[1.168s] -- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/launch
+[1.168s] -- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/launch/display.launch.xml
+[1.169s] -- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/ament_index/resource_index/package_run_dependencies/manipulator_bringups
+[1.169s] -- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/ament_index/resource_index/parent_prefix_path/manipulator_bringups
+[1.169s] -- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/environment/ament_prefix_path.sh
+[1.170s] -- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/environment/ament_prefix_path.dsv
+[1.170s] -- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/environment/path.sh
+[1.170s] -- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/environment/path.dsv
+[1.170s] -- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/local_setup.bash
+[1.171s] -- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/local_setup.sh
+[1.171s] -- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/local_setup.zsh
+[1.171s] -- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/local_setup.dsv
+[1.171s] -- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/package.dsv
+[1.172s] -- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/ament_index/resource_index/packages/manipulator_bringups
+[1.172s] -- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/cmake/manipulator_bringupsConfig.cmake
+[1.173s] -- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/cmake/manipulator_bringupsConfig-version.cmake
+[1.174s] -- Installing: /home/ashish/ros2_ws/install/manipulator_bringups/share/manipulator_bringups/package.xml
+[1.180s] Invoked command in '/home/ashish/ros2_ws/build/manipulator_bringups' returned '0': AMENT_PREFIX_PATH=/home/ashish/ros2_ws/install/manipulator_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ashish/ros2_ws/install/manipulator_description:/home/ashish/ros2_ws/install/my_robot_description:/opt/ros/humble /usr/bin/cmake --install /home/ashish/ros2_ws/build/manipulator_bringups
