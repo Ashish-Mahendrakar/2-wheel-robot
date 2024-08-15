@@ -27,6 +27,8 @@ This repository contains the files necessary for a 2-wheel robot using ROS2. It 
 
 Contributions are welcome! If you have suggestions or improvements, please submit an issue or a pull request.
 
+Note: Here 2-wheel robot is refered as my_robot.
+
 
 
 
